@@ -25,4 +25,4 @@ int main()
   sum=add(a,b);
   output(a,b,sum);
   return 0;
-}
+} 

@@ -7,4 +7,4 @@ int main()
   c=a+b;
   printf("%d+%d is %d\n",a,b,c);
   return 0;
-}
+} 
