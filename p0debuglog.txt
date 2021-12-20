@@ -1,1 +1,5 @@
- 
+Starting program: /home/runner/pps-test1-yashva93327-2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+yashva
+[Inferior 1 (process 57) exited normally]
+(gdb) Quit
