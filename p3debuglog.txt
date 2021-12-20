@@ -1,0 +1,8 @@
+Starting program: /home/runner/pps-test1-yashva93327-2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+enter two values:
+98
+87
+sum of 98 + 87 is 185:
+[Inferior 1 (process 819) exited normally]
+(gdb) 
