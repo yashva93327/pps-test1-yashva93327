@@ -8,7 +8,7 @@ void input (int *a,int *b,int *c)
   printf("enter the third number : ");
   scanf("%d",c);
 }
-void compare(int a, int b, int c, int *largest)
+void compare(int a, int b, int c, int *largest)n
 {
   if (a>b && a>c)
   {
