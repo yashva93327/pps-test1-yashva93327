@@ -1,34 +1,16 @@
-./#include<stdio.h>
-float input()
-{
-  float n;
-  printf("enter a number:");
-  scanf("%f" , &n);
-  return n;
-}
-float my_sqrt(float n)
-{
-  if(n==0 || n==1)
-  {
-    return n;
-  }
-  float i = 1,ans = 1;
-  while(ans <= n)
-  {
-    i++;
-    ans = i*i;
-  }
-  return i-1;
-}
-void output(float n, float sqrt_result)
-{
-  printf("the square root of %0.2f is :%0.2f\n",n,sqrt_result);
-}
+#include<stdio.h>
 int main()
 {
-  float n,sqrt_result;
-  n=input();
-  sqrt_result = my_sqrt(n);
-  output(n, sqrt_result);
+  int Number, i, Sum = 0;
+  
+  printf("\nPlease Enter any Integer Value\n");
+  scanf("%d", &Number);
+  
+  for(i = 1; i <= Number; i++)
+  {
+     Sum = Sum + i;
+  }
+  
+  printf("Sum of Natural Numbers = %d", Sum);
   return 0;
 }
