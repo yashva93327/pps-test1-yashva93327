@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void input_2_strng(char *a,char *b)
 {
   printf("Enter a word ");
