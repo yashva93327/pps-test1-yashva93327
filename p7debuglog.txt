@@ -1,4 +1,10 @@
-gdb a.out
+gcc -g p7final.c
+ ./a.out
+enter the number of inputs:2
+enter a number:77
+enter a number:89
+77+89+89 is 166
+ gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -14,58 +20,31 @@ Find the GDB manual and other documentation resources online at:
 For help, type "help".
 Type "apropos word" to search for commands related to "word"...
 Reading symbols from a.out...done.
-(gdb)  b main
-Breakpoint 1 at 0x772: file p7original.c, line 3.
+(gdb) b main
+Breakpoint 1 at 0x8a8: file p7final.c, line 35.
 (gdb) r
 Starting program: /home/runner/pps-test1-yashva93327-2/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
-Breakpoint 1, main () at p7original.c:3
-3   {
+Breakpoint 1, main () at p7final.c:35
+35  {
 (gdb) n
-4     int Number, i, Sum = 0;
+37    n=input_size_array();
 (gdb) n
-6     printf("\nPlease Enter any Integer Value\n");
+enter the number of inputs:2
+38    int a[n];
 (gdb) n
-
-Please Enter any Integer Value
-7     scanf("%d", &Number);
+39    input_array(n,a);
 (gdb) n
-7
-9     for(i = 1; i <= Number; i++)
+enter a number:76
+enter a number:65
+40    sum=sum_n_array(n,a);
 (gdb) n
-11       Sum = Sum + i;
+41    output(n,a,sum);
 (gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-11       Sum = Sum + i;
-(gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-11       Sum = Sum + i;
-(gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-11       Sum = Sum + i;
-(gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-11       Sum = Sum + i;
-(gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-11       Sum = Sum + i;
-(gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-11       Sum = Sum + i;
-(gdb) n
-9     for(i = 1; i <= Number; i++)
-(gdb) n
-14    printf("Sum of Natural Numbers = %d", Sum);
-(gdb) n
-15    return 0;
+76+65+65 is 141
+42    return 0;
 (gdb) c
 Continuing.
-Sum of Natural Numbers = 28[Inferior 1 (process 768) exited normally]
-(gdb) Quit
+[Inferior 1 (process 217) exited normally]
+(gdb) 
